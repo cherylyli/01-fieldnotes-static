@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fieldnotes • Travel slowly</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/">fieldnotes<span>✳</span></a>
+      <nav>
+        <a href="#stories">The journal</a><a href="about.html">Our philosophy</a
+        ><a class="button" href="#newsletter">Stay curious ↗</a>
+      </nav>
+    </header>
+    <main>
+      <div class="eyebrow">INDEPENDENT JOURNAL · EST. 2024</div>
+      <section class="intro">
+        <h1>Less itinerary.<br />More <em>wonder.</em></h1>
+        <p>
+          For the detours, the unhurried mornings,<br />and the places that stay
+          with you.
+        </p>
+      </section>
+      <a class="hero" href="story.html"
+        ><img
+          src="assets/dolomites.svg"
+          alt="Original illustration of alpine peaks beneath a golden sun"
+        />
+        <div class="hero-copy">
+          <span>THE LONG WAY HOME / ITALY</span>
+          <h2>Somewhere between<br />the mountains &amp; the sky.</h2>
+          <p>A week on foot in the Dolomites. Read the story ↗</p>
+        </div>
+        <span class="issue">FIELDNOTE No. 028</span></a
+      >
+      <section id="stories">
+        <div class="section-title">
+          <h2>Places worth pausing.</h2>
+          <p>Stories from the road, collected slowly.</p>
+        </div>
+        <div class="filters" aria-label="Filter stories">
+          <button class="active" data-filter="All">All stories</button
+          ><button data-filter="Mountains">Mountains</button
+          ><button data-filter="Coast">Coast</button
+          ><button data-filter="Desert">Desert</button
+          ><label
+            >Find a place
+            <input id="search" type="search" placeholder="Search the journal"
+          /></label>
+        </div>
+        <div class="cards" id="cards"></div>
+        <p id="empty" hidden>No stories found. Try another place.</p>
+      </section>
+      <section id="newsletter" class="newsletter">
+        <div>
+          <span class="eyebrow">LETTERS FROM ELSEWHERE</span>
+          <h2>A little wonder<br />in your inbox.</h2>
+          <p>Occasional stories. No rush.</p>
+        </div>
+        <form id="subscribe">
+          <label for="email">Your email address</label>
+          <div>
+            <input
+              id="email"
+              type="email"
+              placeholder="you@somewhere.com"
+              required
+            /><button class="button">Count me in ↗</button>
+          </div>
+          <p id="message" role="status">
+            Demo signup — your address stays in this browser.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="/">fieldnotes✳</a
+      ><span>Go gently. Look closely.</span
+      ><span>© 2026 Fieldnotes Journal</span>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

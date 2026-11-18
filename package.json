@@ -1,0 +1,11 @@
+{
+  "name": "01-fieldnotes-static",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=22.17"
+  }
+}

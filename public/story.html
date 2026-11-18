@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>A fieldnote from the road</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/">fieldnotes✳</a>
+      <nav>
+        <a href="/">The journal</a><a href="about.html">Our philosophy</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article">
+        <a class="back" href="/">← BACK TO THE JOURNAL</a>
+        <p class="eyebrow" id="place">ITALY / MOUNTAINS</p>
+        <h1 id="title">Somewhere between the mountains &amp; the sky.</h1>
+        <p>
+          Some trips are measured in miles. This one was measured in mornings.
+        </p>
+        <img
+          id="cover"
+          src="assets/dolomites.svg"
+          alt="Landscape illustration"
+        />
+        <p>
+          We left the map folded in a pocket and followed the path until the
+          village disappeared behind us. There was no grand destination, only
+          the promise of a warm meal and a new view.
+        </p>
+        <h2>Room for the unexpected</h2>
+        <p>
+          Travel slowly enough and the smallest things become the story: an open
+          window, a conversation at a crossroads, the color of the light just
+          before evening.
+        </p>
+        <p>
+          Our advice is simple. Pack less. Leave space. Take the long way home.
+        </p>
+        <a class="button" href="/">Explore more fieldnotes ↗</a>
+      </article>
+    </main>
+    <script>
+      const key = new URLSearchParams(location.search).get("place");
+      const notes = {
+        coast: ["PORTUGAL / COAST", "Following the Atlantic light"],
+        desert: ["MOROCCO / DESERT", "Where the silence has a color"],
+      };
+      if (notes[key]) {
+        document.querySelector("#place").textContent = notes[key][0];
+        document.querySelector("#title").textContent = notes[key][1];
+        document.querySelector("#cover").src = "assets/" + key + ".svg";
+      }
+    </script>
+  </body>
+</html>
