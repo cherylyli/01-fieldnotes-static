@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/../.."
+test -d public
+figma make deploy --build-dir public
